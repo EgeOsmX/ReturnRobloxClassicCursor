@@ -82,9 +82,9 @@ namespace Return_Roblox_Classic_Cursor
             this.label_rrcc3_ver.AutoSize = true;
             this.label_rrcc3_ver.Location = new System.Drawing.Point(153, 87);
             this.label_rrcc3_ver.Name = "label_rrcc3_ver";
-            this.label_rrcc3_ver.Size = new System.Drawing.Size(28, 13);
+            this.label_rrcc3_ver.Size = new System.Drawing.Size(37, 13);
             this.label_rrcc3_ver.TabIndex = 4;
-            this.label_rrcc3_ver.Text = "v1.0";
+            this.label_rrcc3_ver.Text = "v1.0.1";
             this.label_rrcc3_ver.Click += new System.EventHandler(this.label_rrcc3_ver_Click);
             // 
             // checkbox_winStartup

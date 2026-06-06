@@ -385,7 +385,7 @@ update=1
         {
             if (GetIniValue("auto") != "1")
             {
-                menuCountdown.Text = "Kontrol süresi: Devre dışı";
+                menuCountdown.Text = "Next check: Deactivated";
                 return;
             }
 
@@ -409,7 +409,7 @@ update=1
                 remaining = TimeSpan.Zero;
 
             menuCountdown.Text =
-                $"Kontrol süresi: {remaining.Minutes}m {remaining.Seconds}s";
+                $"Next check: {remaining.Minutes}m {remaining.Seconds}s";
         }
 
         private void MonitorTimer_Tick(object sender, EventArgs e)
