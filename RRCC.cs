@@ -286,18 +286,6 @@ update=1
                     {
                         string l = line.Trim();
 
-                        if (string.IsNullOrWhiteSpace(latestVersion))
-                        {
-                            stripMenuItem_update.Text = "Update";
-
-                            menuUpdateStatus.Text =
-                                "You are up to date";
-
-                            menuUpdateStatus.Enabled = false;
-
-                            return;
-                        }
-
                         if (l == "[latest]")
                         {
                             inLatest = true;
@@ -314,13 +302,17 @@ update=1
                             continue;
 
                         if (l.StartsWith("latestversion="))
-                        {
                             latestVersion = l.Substring(14).Trim();
-                        }
+
                         else if (l.StartsWith("install="))
-                        {
                             installUrl = l.Substring(8).Trim();
-                        }
+                    }
+
+                    if (string.IsNullOrWhiteSpace(latestVersion))
+                    {
+                        menuUpdateStatus.Text = "Update check failed";
+                        menuUpdateStatus.Enabled = false;
+                        return;
                     }
 
                     updateInstallUrl = installUrl;
@@ -330,14 +322,17 @@ update=1
                         .Replace("v", "")
                         .Trim();
 
-                    if (latestVersion != currentVersion)
+                    Version latest = new Version(latestVersion);
+                    Version current = new Version(currentVersion);
+
+                    if (latest > current)
                     {
                         updateInstallUrl = installUrl;
 
                         stripMenuItem_update.Text = "Update Available";
 
                         menuUpdateStatus.Text =
-                            $"Update Available: {latestVersion} (click)";
+                            $"Update Available: {latestVersion}";
 
                         menuUpdateStatus.Enabled = true;
                     }
