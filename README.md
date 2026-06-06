@@ -1,5 +1,6 @@
 # Return Roblox Classic Cursor
 
+- [Tutorial Video](#tutorial-video)
 - [What is RRCC?](#what-is-rrcc)
 - [How does this tool work?](#how-does-this-tool-work)
 - [Supported Systems](#supported-systems)
@@ -8,6 +9,13 @@
 <div style="line-height: 0;">
   <img src=".github-assets/app.png" width="35%" style="display: block; margin: 0;" />
 </div>
+
+
+## Tutorial Video
+
+<a href="https://youtu.be/YurP-E6Xl6s"><img src=".github-assets/tutorial.png" width="40%"></a>
+
+<br>
 
 ## What is RRCC?
 
