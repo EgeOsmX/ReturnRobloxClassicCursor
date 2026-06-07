@@ -68,8 +68,9 @@ Other systems are not supported and may not work correctly.
 
 ## Installation
 
-1. Download the latest release from the [Releases](https://github.com/EgeOsmX/ReturnRobloxClassicCursor/releases) page.  
-2. Open `RRCC.exe` (no admin rights required).
+1. Download the latest release from the [Releases](https://github.com/EgeOsmX/ReturnRobloxClassicCursor/releases) page.
+2. This application requires <strong>.NET Framework 4.7.2 or newer.</strong> Visit the download page [here.](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+3. Open `RRCC.exe` (no admin rights required).
 
 
 <br><sub>
